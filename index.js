@@ -14,23 +14,10 @@ window.addEventListener("load", () => {
 
   pads.forEach((pad, index) => {
     
-      
-      pad.addEventListener("mousedown",function(){
-        sounds[index].currentTime = 0;
-        sounds[index].play();
-        background.style.backgroundColor = colors[index]; 
-      })
-      pad.addEventListener("mouseup",function(){
-        
-        background.style.backgroundColor = "white"; 
-      })
       pad.addEventListener("click",function(){
         sounds[index].currentTime = 0;
         sounds[index].play();
-        setTimeout(function(){
-          background.style.backgroundColor = colors[index];
-        },100);
-         
+        background.style.backgroundColor = colors[index];
       })
       
    
