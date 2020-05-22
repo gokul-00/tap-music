@@ -32,10 +32,7 @@ window.addEventListener("load", () => {
         },100);
          
       })
-      pad.addEventListener("touchend",function(){
-        
-        background.style.backgroundColor = "white"; 
-      })
+      
    
   });
 
