@@ -24,10 +24,13 @@ window.addEventListener("load", () => {
         
         background.style.backgroundColor = "white"; 
       })
-      pad.addEventListener("touchstart",function(){
+      pad.addEventListener("click",function(){
         sounds[index].currentTime = 0;
         sounds[index].play();
-        background.style.backgroundColor = colors[index]; 
+        setTimeout(function(){
+          background.style.backgroundColor = colors[index];
+        },100);
+         
       })
       pad.addEventListener("touchend",function(){
         
